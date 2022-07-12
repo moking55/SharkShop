@@ -17,7 +17,7 @@ function Homepage() {
             {/* Product list */}
 
             <Container>
-                <h3 className="mb-3">สินค้าทั้งหมด</h3>
+                <h3 className="mb-3">สินค้าทั้งหมด ({Products.length})</h3>
                 <Row>
                     {
                         Products.map((product, index) => <Col key={index} md={3}><ProductCard productID={index} prod_img={product.prod_img} prod_prices={product.prod_prices} prod_name={product.prod_name} /></Col>)

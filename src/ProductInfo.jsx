@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import Product from './data/products.json';
 import { useParams } from 'react-router-dom';
 
@@ -29,18 +29,42 @@ function ProductInfo() {
                             <img className="img-thumbnail" src={productInfo.prod_img} alt="product logo" style={{ width: '100%' }} />
                         </Col>
                         <Col md={9}>
-                            <h3>{productInfo.prod_name}</h3>
+                            <div className="d-flex h-100 flex-column">
+                                <div className="my-auto">
+                                    <h2>{productInfo.prod_name}</h2>
+                                    <small>{productInfo.prod_info}</small>
+                                </div>
+                            </div>
                         </Col>
                     </Row>
                 </Container>
             </div>
-            <Container>
+            <Container className="mt-3">
+                <Card className="border-0 shadow">
+                    <Card.Body>
+                        <Row className="p-3">
+                            <Col md={9}>
+                                <h5>รายการเติมเงิน:</h5>
+                                <table className="table table-bordered mt-4 text-center">
+                                    <tbody>
+                                        <tr style={{ height: 150, verticalAlign: 'middle' }}>
+                                            {productInfo["prod_prices"].map((price, index) => {
+                                                return <td key={index}>
+                                                    <img src={productInfo.prod_money_icon} alt="money" style={{ width: 60 }} />
+                                                    <p className="m-0">{price} ฿</p>
+                                                </td>
+                                            })}
 
-                <Row>
-                    <Col md={4}>
-
-                    </Col>
-                </Row>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </Col>
+                            <Col md={3}>
+                                <Button className="w-100">ซื้อสินค้า</Button>
+                            </Col>
+                        </Row>
+                    </Card.Body>
+                </Card>
             </Container>
         </React.Fragment>
     )

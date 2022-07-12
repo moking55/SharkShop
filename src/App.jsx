@@ -33,7 +33,7 @@ function App() {
         </Routes>
       </Router>
       <footer className="text-center py-3">
-        <small className="text-muted">Built and maintained by <a style={{ textDecoration: 'none' }} href="//github.com/moking55">Codename_T</a> contributed with <b>Memilk</b>. This project are in this repository.</small>
+        <small className="text-muted">Built and maintained by <a style={{ textDecoration: 'none' }} href="//github.com/moking55">Codename_T</a> contributed with <b>Memilk</b>. This project are in this <a style={{ textDecoration: 'none' }} href="https://github.com/moking55/SharkShop">repository</a>.</small>
       </footer>
 
     </React.Fragment>
