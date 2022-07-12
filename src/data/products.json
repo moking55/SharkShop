@@ -1,0 +1,25 @@
+[
+    {
+        "prod_name": "Roblox",
+        "prod_img": "https://images.rbxcdn.com/d66ae37d46e00a1ecacfe9531986690a.jpg",
+        "prod_info": "Roblox นั้นมีประวัติในการเริ่มก่อร่างสร้างตัวที่ค่อนข้างยาวนาน โดยมันถูกสร้างขึ้นโดยสองเพื่อนคู่หู David Baszucki และ Erik Cassel ก่อนที่จะมาสร้างเกมนั้น Baszucki ได้ก่อตั้งบริษัท Knowledge Revolution ร่วมกันกับพี่ชาย Greg ซึ่งเขานั้นได้สร้างโปรแกรมจำลองระบบฟิสิกส์ที่เรียกว่า “Interactive Physics” ที่ขายได้มากถึงล้านชุดในเวลาต่อมา และเป็นจุดกำเนิดของแรงบันดาลใจในการสร้าง Roblox",
+        "prod_prices": [
+            20,
+            50,
+            100,
+            500,
+            1000
+        ]
+    },
+    {
+        "prod_name": "Genshin Impacts",
+        "prod_img": "https://www.compgamer.com/mainpage/wp-content/uploads/2020/08/Genshin-Impact_Key-Art-EN-3.jpg",
+        "prod_info": "เติมเกม Genshin Impacts",
+        "prod_prices": [
+            100,
+            300,
+            500,
+            1000
+        ]
+    }
+]
